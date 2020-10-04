@@ -1,12 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import {BrowserRouter, Route} from 'react-router-dom';
+
 import * as serviceWorker from './serviceWorker';
+import Home from './components/Home';
+import AddExpense from './components/AddExpense';
+
+const routes = (
+  <BrowserRouter>
+    <Route exact path="/">
+      <Home />
+    </Route>
+    <Route path="/create">
+      <AddExpense />
+    </Route>
+  </BrowserRouter>
+);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {routes}
   </React.StrictMode>,
   document.getElementById('root')
 );
