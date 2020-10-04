@@ -1,25 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {BrowserRouter, Route} from 'react-router-dom';
 
 import * as serviceWorker from './serviceWorker';
-import Home from './components/Home';
-import AddExpense from './components/AddExpense';
 
-const routes = (
-  <BrowserRouter>
-    <Route exact path="/">
-      <Home />
-    </Route>
-    <Route path="/create">
-      <AddExpense />
-    </Route>
-  </BrowserRouter>
-);
+import './styles/styles.scss';
+import AppRouter from './routers/AppRouter';
 
 ReactDOM.render(
   <React.StrictMode>
-    {routes}
+    <AppRouter />
   </React.StrictMode>,
   document.getElementById('root')
 );

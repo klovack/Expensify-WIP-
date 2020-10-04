@@ -1,6 +1,8 @@
 import React from 'react';
 
-function AddExpense() {
+function AddExpense(props) {
+  console.log(props);
+
   return (
     <div>
       This is from expense component

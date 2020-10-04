@@ -1,0 +1,54 @@
+html {
+  /* Change base 10 rem */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $playfairDisplay;
+  font-size: $size-m;
+  color: $off-black;
+}
+
+h1, h2, h3, h4 {
+  font-weight: bold;
+  line-height: $rsize-m;
+}
+
+h1 {
+  font-size: $size-h1;
+  letter-spacing: $ls-condensed;
+}
+
+h2 {
+  font-size: $size-h2;
+  letter-spacing: $ls-neat;
+  font-weight: lighter;
+}
+
+h3 {
+  font-size: $size-h3;
+  letter-spacing: $ls-normal;
+}
+
+h4 {
+  font-size: $size-h4;
+  letter-spacing: .25px;
+}
+
+h5 {
+  font-size: $size-h5;
+  letter-spacing: 0;
+}
+
+h6 {
+  font-size: $size-h6;
+  letter-spacing: 0.15px;
+}
+
+button, a, p {
+  font-family: $playfairDisplay;
+}
+
+button {
+  cursor: pointer;
+}
